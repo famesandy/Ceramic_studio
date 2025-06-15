@@ -1,0 +1,22 @@
+{
+  "name": "ceramic_studio",
+  "version": "1.0.0",
+  "description": "html and css education project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/famesandy/Ceramic_studio.git"
+  },
+  "author": "famesandy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/famesandy/Ceramic_studio/issues"
+  },
+  "homepage": "https://github.com/famesandy/Ceramic_studio#readme",
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}
