@@ -7,29 +7,24 @@
     height: 50px;
     font-size: 20px;
 
+    @media screen and (min-width:1200px) {
+        &:hover {
+            background-color: v.$dark-color;
+            color: v.$light-color;
+            box-shadow: none;
+        }
 
-    &:hover {
-        background-color: v.$dark-color;
-        color: v.$light-color;
-        box-shadow: none;
+        &:active {
+            background-color: v.$ui-active-color;
+            box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.4) inset;
+            color: v.$light-color;
+            border: none;
+        }
+
     }
 
-    &:active {
-        background-color: v.$ui-active-color;
-        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.4) inset;
+    @media screen and (min-width:1920px) {
+        width: 330px;
+        height: 60px;
     }
 }
-
-
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     margin: 18px auto 0 auto;
-
-
-//     // margin-top: 18px;
-//     background-color: v.$light-color;
-
-
-
-//     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);

@@ -1,0 +1,24 @@
+@use "/src/sass/base/variables.scss" as v;
+@use "/src/sass/base/mixins.scss" as m;
+
+.input__default {
+    @include m.input;
+
+    // &:: {
+    //     border-color: v.$ui-error-color;
+    //     outline-width: 1px;
+    // }
+
+    &:active,
+    &:hover,
+    &:focus,
+    &:focus-visible {
+        border-color: v.$dark-color;
+        outline-color: v.$dark-color;
+        outline-width: 0px;
+    }
+
+    &:disabled {
+        border-color: v.$ui-disabled-color;
+    }
+}

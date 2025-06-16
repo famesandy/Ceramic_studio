@@ -20,4 +20,33 @@
     font-style: normal;
     line-height: normal;
     text-transform: uppercase;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+@mixin input {
+    border: #E2E1E5 1px solid;
+    border-radius: 2px;
+    padding: 10px 15px;
+    // text-align: left;
+    color: v.$dark-color;
+    background-color: #FFFFFF;
+    // display: block;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 28px;
+    font-size: 14px;
+
+    &::placeholder {
+        color: v.$ui-disabled-color;
+    }
+}
+
+@mixin label {
+    font-family: Inter, sans-serif;
+    color: v.$dark-color;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 28px;
+    font-size: 14px;
 }

@@ -11,25 +11,42 @@
 <body>
     <main>
         <section class="promo">
+            <img src="/src/img/promo/potter.jpg" alt="potter" class="promo__potter">
             <div class="container">
                 <div class="header">
-                    <div class="burger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <div class="header__top">
+                        <div class="burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <a href="#" class="header__logo">
+                            <img src="/src/img/logo/logo.png" alt="logo" />
+                        </a>
+
+
+                        <div class="header__icons">
+                            <a href="#"><span class="icon-search"></span></a>
+                            <a href="#"><span class="icon-shopping-bag"></span></a>
+                        </div>
                     </div>
-                    <a href="#" class="header__logo">
-                        <img src="/src/img/logo/logo.png" alt="logo" />
-                    </a>
-                    <div class="header__icons">
-                        <a href="#"><span class="icon-search"></span></a>
-                        <a href="#"><span class="icon-shopping-bag"></span></a>
+                    <nav class="header__nav">
+                        <ul>
+                            <li><a href="#" class="header__link">Catalog</a></li>
+                            <li><a href="#" class="header__link">Blog</a></li>
+                            <li><a href="#" class="header__link">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="promo__wrapper">
+                    <h1 class="title-h1-italic promo__title">Make your dream come true</br>
+                        or decorate yourhome</h1>
+                    <div class="promo__cta">
+                        <img class="promo__img" src="/src/img/promo/ceramic-vase.jpg" alt="ceramic vase" />
+                        <button class="btn-default promo__btn">Shop now</button>
                     </div>
                 </div>
-                <h1 class="title-h1-italic promo__title">Make your dream come true
-                    or decorate yourhome</h1>
-                <img class="promo__img" src="/src/img/promo/ceramic-vase.jpg" alt="ceramic vase" />
-                <button class="btn-default promo__btn">Shop now</button>
             </div>
         </section>
         <section class="activities">
@@ -68,12 +85,33 @@
                 </div>
             </div>
         </section>
-        <!--<section class="get-in-touch">
+        <section class="get_in_touch">
             <div class="container">
                 <h2>Get in touch</h2>
+                <form class="get_in_touch__form">
+                    <div class="get_in_touch__form-block">
+                        <label class="label__default get_in_touch__label">Name</label>
+                        <input class="input__default get_in_touch__input" placeholder="Name" />
+                    </div>
+                    <div class="get_in_touch__form-block">
+                        <label class="label__default get_in_touch__label" type="Email">Email</label>
+                        <input class="input__default get_in_touch__input" placeholder="Email" />
+                    </div>
+                    <div class="get_in_touch__form-question">
+                        <label class="label__default get_in_touch__label">Your question</label>
+                        <textarea class="input__default get_in_touch__input get_in_touch__desc"
+                            placeholder="Question"></textarea>
+                    </div>
+                    <div class="get_in_touch__checkbox">
+                        <input class="checkbox" type="checkbox"><label class="get_in_touch__checkbox__label">I agree
+                            with
+                            the <a href="#">terms</a></label>
+                    </div>
+                    <button type="submit" class="btn-default get_in_touch__btn">Send request</button>
+                </form>
             </div>
         </section>
-        <section class="works">
+        <!--<section class="works">
             <div class="container">
                 <h2>Check out our works</h2>
             </div>

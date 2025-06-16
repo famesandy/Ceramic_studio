@@ -1,12 +1,18 @@
 @use "/src/sass/base/variables.scss" as v;
 
 .header {
-    display: flex;
-    justify-content: space-between;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
 
     &__logo {
         width: 100px;
         height: 100px;
+    }
+
+    &__nav {
+        display: none;
     }
 
     &__icons {
@@ -22,11 +28,11 @@
                 display: block;
                 width: 20px;
                 height: 20px;
-                // font-size: 18px;
-                // background-color: v.$light-color;
             }
         }
     }
+
+
 }
 
 .burger {
@@ -42,5 +48,57 @@
         width: 20px;
         height: 1px;
 
+    }
+}
+
+@media screen and (min-width:768px) {
+    .burger {
+        visibility: hidden;
+    }
+
+    .header {
+        &__nav {
+            display: block;
+            margin-top: 20px;
+
+            ul {
+                display: flex;
+                justify-content: center;
+                column-gap: 30px;
+
+                padding-left: 0;
+
+                li {
+                    list-style-type: none;
+                }
+            }
+        }
+
+        &__link {
+            font-size: 20px;
+            font-style: normal;
+            line-height: normal;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: v.$dark-color;
+        }
+
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .header {
+        &__nav {
+            margin-top: 36px;
+
+            ul {
+                column-gap: 60px;
+            }
+        }
+
+        &__logo {
+            width: 150px;
+            height: 151px;
+        }
     }
 }
