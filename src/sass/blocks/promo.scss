@@ -1,0 +1,23 @@
+@use "/src/sass/base/variables.scss" as v;
+
+.promo {
+    padding-top: 50px;
+    background-color: v.$light-color;
+    color: v.$dark-color;
+
+    &__title {
+        margin-block-start: 50px;
+        padding-inline: 5px;
+    }
+
+    &__img {
+        width: 270px;
+        height: 377px;
+        margin: 40px auto 0 auto;
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25)
+    }
+
+    &__btn {
+        margin: 18px auto 0 auto;
+    }
+}

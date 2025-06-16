@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'Inter';
     src: local('Inter Regular'), local('Inter-Regular'),
-        url('../font/Inter-Regular.woff2') format('woff2'),
-        url('../font/Inter-Regular.woff') format('woff');
+        url('/src/font/Inter-Regular.woff2') format('woff2'),
+        url('/src/font/Inter-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
@@ -10,8 +10,8 @@
 @font-face {
     font-family: 'Barlow';
     src: local('Barlow Regular'), local('Barlow-Regular'),
-        url('../font/Barlow-Regular.woff2') format('woff2'),
-        url('../font/Barlow-Regular.woff') format('woff');
+        url('/src/font/Barlow-Regular.woff2') format('woff2'),
+        url('/src/font/Barlow-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
@@ -19,8 +19,8 @@
 @font-face {
     font-family: 'Barlow';
     src: local('Barlow Italic'), local('Barlow-Italic'),
-        url('../font/Barlow-Italic.woff2') format('woff2'),
-        url('../font/Barlow-Italic.woff') format('woff');
+        url('/src/font/Barlow-Italic.woff2') format('woff2'),
+        url('/src/font/Barlow-Italic.woff') format('woff');
     font-weight: 400;
     font-style: italic;
 }
@@ -28,8 +28,8 @@
 @font-face {
     font-family: 'Barlow';
     src: local('Barlow Medium'), local('Barlow-Medium'),
-        url('../font/Barlow-Medium.woff2') format('woff2'),
-        url('../font/Barlow-Medium.woff') format('woff');
+        url('/src/font/Barlow-Medium.woff2') format('woff2'),
+        url('/src/font/Barlow-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
