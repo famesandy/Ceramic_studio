@@ -69,16 +69,13 @@
 
 @media screen and (min-width: 768px) {
     .touch {
-
-
-        // padding: 60px 24px 0 24px;
+        position: relative;
 
         &__wrapper {
             margin-top: 45px;
         }
 
         &__form {
-            position: relative;
             padding-left: 24px;
             width: 300px;
         }
@@ -100,8 +97,16 @@
             margin-top: 80px;
         }
 
+        &__form {
+            padding-left: 40px;
+        }
+
         &__img {
             display: block;
+            width: 550px;
+            height: 342px;
+            object-fit: cover;
+            box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
         }
     }
 }
@@ -109,5 +114,25 @@
 @media screen and (min-width: 1920px) {
     .touch {
         padding-top: 100px;
+
+        &__form {
+            padding-left: 147px;
+            width: auto;
+        }
+
+        &__fieldset {
+            display: flex;
+            column-gap: 45px;
+        }
+
+        &__img {
+            width: 100%;
+            height: 356px;
+        }
+
+        &__input,
+        &__textarea {
+            width: 300px;
+        }
     }
 }
