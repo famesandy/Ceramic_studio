@@ -7,7 +7,27 @@
     height: 50px;
     font-size: 20px;
 
-    @media screen and (min-width:1200px) {
+}
+
+.btn-send {
+    @include m.button;
+    width: 220px;
+    height: 40px;
+    font-size: 16px;
+
+    &:focus {
+        border: 1px solid v.$ceramic-color;
+        outline: 1px solid v.$ceramic-color;
+    }
+
+    &:disabled {
+        border: 1px solid v.$ui-disabled-color;
+        color: v.$ui-disabled-color;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .btn-default {
         &:hover {
             background-color: v.$dark-color;
             color: v.$light-color;
@@ -20,10 +40,24 @@
             color: v.$light-color;
             border: none;
         }
-
     }
 
-    @media screen and (min-width:1920px) {
+    .btn-send {
+        &:hover {
+            border-color: v.$ceramic-color;
+            color: v.$ceramic-color;
+        }
+
+        &:active {
+            border: 1px solid v.$ceramic-color;
+            outline: 1px solid v.$ceramic-color;
+        }
+    }
+
+}
+
+@media screen and (min-width:1920px) {
+    .btn-default {
         width: 330px;
         height: 60px;
     }
