@@ -17,10 +17,8 @@
   },
   "homepage": "https://github.com/famesandy/Ceramic_studio#readme",
   "devDependencies": {
+    "postcss-pxtorem": "^6.1.0",
     "sass": "^1.89.2",
     "vite": "^6.3.5"
-  },
-  "dependencies": {
-    "postcss-pxtorem": "^6.1.0"
   }
 }

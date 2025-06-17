@@ -1,4 +1,6 @@
 @use "/src/sass/libs/modern-normalize.min.css";
+@use "/src/sass/libs/grids-min.css";
+@use "/src/sass/libs/grids-responsive-min.css";
 @use "/src/sass/libs/fonts.css";
 @use "/src/sass/libs/fontello.css";
 @use "/src/sass/base/basic.scss";
@@ -16,31 +18,3 @@
 
 @use "/src/sass/blocks/promo.scss";
 @use "/src/sass/blocks/activities.scss";
-
-
-// :root {
-//     --light-color: #FAFAFA;
-//     --dark-color: #232323;
-//     --ui-active-color: #D9D9D9;
-//     --ui-disabled-color: #D2D2D2;
-//     --ui-error-color: #DB0C35;
-//     --ceramic-color: #C69978;
-
-//     --container-padding-inline: 10px;
-//     --footer-padding-inline: 10px;
-
-//     @media screen and (min-width: 768px) {
-//         --container-padding-inline: 24px;
-//         --footer-padding-inline: 24px;
-//     }
-
-//     @media screen and (min-width: 1200px) {
-//         --container-padding-inline: 30px;
-//         --footer-padding-inline: 30px;
-//     }
-
-//     @media screen and (min-width: 1920px) {
-//         --container-padding-inline: 240px;
-//         --footer-padding-inline: 240px;
-//     }
-// }
