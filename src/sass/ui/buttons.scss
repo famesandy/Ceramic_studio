@@ -26,6 +26,25 @@
     }
 }
 
+.btn-submit {
+    @include m.button;
+    color: v.$light-color;
+    border-color: v.$light-color;
+    width: 90px;
+    height: 40px;
+    font-size: 16px;
+
+    // &:focus {
+    //     border: 1px solid v.$ceramic-color;
+    //     outline: 1px solid v.$ceramic-color;
+    // }
+
+    &:disabled {
+        border: 1px solid v.$ui-disabled-color;
+        color: v.$ui-disabled-color;
+    }
+}
+
 @media screen and (min-width:1200px) {
     .btn-default {
         &:hover {

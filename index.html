@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <main>
+    <main class="main">
         <section class="promo">
             <img src="/src/img/promo/potter.jpg" alt="potter" class="promo__potter">
             <div class="container">
@@ -151,15 +151,67 @@
                 </div>
             </div>
         </section>
-        <script type="module" src="/src/js/script.js?v2"></script>
-        <!-- <span class="icon-facebook"></span>
-    <span class="icon-pinterest"></span>
-    <span class="icon-search-outline"></span>
-    <span class="icon-shopping-bag"></span> -->
-        <footer>
-
+        <footer class="footer footer__spaced">
+            <div class="container">
+                <div class="footer__up">
+                    <form action="#" class="footer__form">
+                        <div class="footer__title">newsletter</div>
+                        <h2 class="footer__text footer__h2">Keep up to date with news and promotions</h2>
+                        <input type="email" class="footer__input" placeholder="Enter your e-mail" id="footer_email"
+                            required name="footer_email" />
+                        <div>
+                            <label for="footer_agree" class="label__default footer__checkbox-block">
+                                <input class="footer__checkbox" type="checkbox" id="footer_agree" required
+                                    name="footer_agree" placeholder="Enter your e-mail" />
+                                I agree with the <a href="#">terms</a>
+                            </label>
+                        </div>
+                        <button class="btn-submit footer__button">submit</button>
+                    </form>
+                    <!-- <div class="footer__info"> -->
+                    <div class="footer__wrapper">
+                        <div>
+                            <div class="footer__title">discover</div>
+                            <nav>
+                                <ul class="footer__ul">
+                                    <li class="footer__text footer__li"><a href="#">About Us</a></li>
+                                    <li class="footer__text footer__li"><a href="#">Blog</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div>
+                            <nav>
+                                <div class="footer__title">shopping</div>
+                                <ul class="footer__ul">
+                                    <li class="footer__text  footer__li"><a href="#">Catalog</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div>
+                            <nav>
+                                <div class="footer__title">information</div>
+                                <ul class="footer__ul">
+                                    <li class="footer__text footer__li"><a href="#">Terms and Conditions</a></li>
+                                </ul>
+                        </div>
+                        </nav>
+                    </div>
+                    <div class="footer__follow">
+                        <div class="footer__title">follow us</div>
+                        <div class="footer__wrapper_icons">
+                            <a class="icon-facebook footer__icon"></a>
+                            <a class="icon-instagram footer__icon"></a>
+                            <a class="icon-pinterest footer__icon"></a>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+                <div class="footer__copyright">© Copyright 2025, Ceramic soul</div>
+            </div>
         </footer>
+        <script type="module" src="/src/js/script.js?v2"></script>
     </main>
+
 </body>
 
 </html>
