@@ -1,6 +1,73 @@
 @use "/src/sass/base/variables.scss" as v;
 
 .header {
+    &__menu {
+        position: fixed;
+        top: 0;
+        left: -100vw;
+        background-color: v.$light-color;
+        width: 100vw;
+        height: 100vh;
+        padding: 50px 10px;
+        transition: transform 0.4s;
+
+        &-nav {
+            margin-top: 50px;
+            padding: 0 14px;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                row-gap: 25px;
+                list-style-type: none;
+                padding: 0;
+            }
+        }
+
+        &-link {
+            width: 100%;
+            display: block;
+            color: v.$dark-color;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        &-close {
+            position: relative;
+            width: 14px;
+            height: 14px;
+
+            span {
+                left: -3.1px;
+                top: 6.8px;
+                position: absolute;
+                display: block;
+                width: 20px;
+                height: 1px;
+                background-color: v.$dark-color;
+
+                &:nth-child(1) {
+                    transform: rotate(45deg);
+                }
+
+                &:nth-last-child(1) {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+
+        &_active {
+            transform: translateX(100%);
+            z-index: 1000;
+        }
+
+    }
+
     &__top {
         display: flex;
         justify-content: space-between;
@@ -57,6 +124,10 @@
     }
 
     .header {
+        &__menu {
+            display: none;
+        }
+
         &__nav {
             display: block;
             margin-top: 20px;
