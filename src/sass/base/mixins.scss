@@ -64,3 +64,25 @@
     line-height: 28px;
     font-size: 14px;
 }
+
+@mixin angle-decoration {
+
+    &::after,
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: v.$dark-color;
+    }
+
+    &::after {
+        width: 200px;
+        height: 1px;
+    }
+
+    &::before {
+        width: 1px;
+        height: 200px;
+    }
+}
