@@ -78,11 +78,13 @@
 
     &::after {
         width: 200px;
-        height: 1px;
+        height: 0px;
+        border-top: 1px solid v.$dark-color;
     }
 
     &::before {
-        width: 1px;
+        width: 0px;
         height: 200px;
+        border-right: 1px solid v.$dark-color;
     }
 }

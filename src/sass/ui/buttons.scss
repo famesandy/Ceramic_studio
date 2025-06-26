@@ -45,6 +45,23 @@
     }
 }
 
+.btn-read {
+    @include m.button;
+    width: 145px;
+    height: 32px;
+    font-size: 14px;
+
+    &:focus {
+        border: 1px solid v.$ceramic-color;
+        outline: 1px solid v.$ceramic-color;
+    }
+
+    &:disabled {
+        border: 1px solid v.$ui-disabled-color;
+        color: v.$ui-disabled-color;
+    }
+}
+
 @media screen and (min-width:1200px) {
     .btn-default {
         &:hover {
@@ -62,6 +79,18 @@
     }
 
     .btn-send {
+        &:hover {
+            border-color: v.$ceramic-color;
+            color: v.$ceramic-color;
+        }
+
+        &:active {
+            border: 1px solid v.$ceramic-color;
+            outline: 1px solid v.$ceramic-color;
+        }
+    }
+
+    .btn-read {
         &:hover {
             border-color: v.$ceramic-color;
             color: v.$ceramic-color;
