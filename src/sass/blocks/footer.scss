@@ -1,6 +1,16 @@
 @use "/src/sass/base/variables.scss" as v;
 
 .footer {
+
+    .just-validate-error-field {
+        // color: v.$ui-error-color;
+        border-color: v.$ui-error-color;
+
+        &::placeholder {
+            color: v.$ui-error-color;
+        }
+    }
+
     padding: 50px 0;
     background-color: v.$dark-color;
 
@@ -24,6 +34,17 @@
     }
 
     &__input {
+        &:is(:-webkit-autofill, :autofill) {
+            border-color: v.$ui-active-color;
+            font-weight: 400;
+            font-size: 14px;
+            font-style: normal;
+            line-height: normal;
+            padding-bottom: 15px;
+            -webkit-text-fill-color: v.$light-color;
+            -webkit-box-shadow: 0 0 0px 1000px v.$dark-color inset;
+        }
+
         margin-top: 40px;
         width: 293px;
         background-color: v.$dark-color;

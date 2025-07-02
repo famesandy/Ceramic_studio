@@ -1,5 +1,6 @@
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
+import JustValidate from 'just-validate';
 
 // import Swiper and modules styl
 // 
@@ -76,3 +77,110 @@ try {
 catch (e) {
 
 }
+
+try {
+    const validatorTouch = new JustValidate(".touch__form");
+    // , { submitFormAutomatically: true });
+
+    validatorTouch
+        .addField("#name",
+            [
+                {
+                    rule: 'required',
+                    errorMessage: "Please fill the name"
+                },
+                {
+                    rule: 'minLength',
+                    value: 2,
+                    errorMessage: "Min 2 char"
+                },
+            ]
+        )
+        .addField("#email",
+            [
+                {
+                    rule: 'required',
+                },
+                {
+                    rule: 'email',
+                },
+            ]
+        )
+        .addField("#question",
+            [
+                {
+                    rule: 'required',
+                },
+                {
+                    rule: 'minLength',
+                    value: 5
+                },
+            ]
+        )
+        .addField("#agree",
+            [
+                {
+                    rule: 'required',
+                },
+            ],
+            {
+                errorsContainer: ".checkbox-error-message",
+            }
+        )
+        .onSuccess((event) => {
+            const form = event.currentTarget;
+            const formData = new FormData(form);
+
+            fetch("https://httpbin.org/post",
+                {
+                    method: "POST",
+                    body: formData
+                }
+            ).then(res => res.json()).then(data => {
+                console.log(data);
+                form.reset();
+            });
+        });
+}
+catch (e) {
+
+}
+
+try {
+    const validatorFooter = new JustValidate(".footer__form");
+    // , { submitFormAutomatically: true });
+
+    validatorFooter
+        .addField("#footer_email",
+            [
+                {
+                    rule: 'required',
+                    errorMessage: "Please fill the email"
+                },
+                {
+                    rule: 'minLength',
+                    value: 2,
+                    errorMessage: "Min 2 char"
+                },
+                {
+                    rule: 'email',
+                    errorMessage: "Incorrect email field"
+                },
+            ]
+            ,
+            {
+                errorsContainer: ".footer_email_error",
+            }
+        )
+        .addField("#footer_agree",
+            [
+                {
+                    rule: 'required',
+                },
+            ]
+        )
+}
+catch (e) {
+
+}
+

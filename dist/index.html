@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ceramic soul</title>
     <link rel="icon" href="/assets/vase-Bzaouma-.png" type="image/x-icon">
-    <script type="module" crossorigin src="/assets/main-B30VQNWw.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/main-BW_bi1FS.css">
+  <script type="module" crossorigin src="/assets/script-DJP-Fk-V.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/script-BtRmnD7-.css">
 </head>
 
 <body>
@@ -16,6 +16,19 @@
             <img src="/assets/potter-BWp7fGoD.jpg" alt="potter" class="promo__potter">
             <div class="container">
                 <div class="header">
+                    <div class="header__menu">
+                        <div class="header__menu-close">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <nav class="header__menu-nav">
+                            <ul>
+                                <li><a class="header__menu-link" href="/catalog">Catalog</a></li>
+                                <li><a class="header__menu-link" href="/blog">Blog</a></li>
+                                <li><a class="header__menu-link" href="/about">About</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                     <div class="header__top">
                         <div class="burger">
                             <span></span>
@@ -23,7 +36,7 @@
                             <span></span>
                         </div>
 
-                        <a href="#" class="header__logo">
+                        <a href="/" class="header__logo">
                             <img src="/assets/logo-DncQ7Gxb.png" alt="logo" />
                         </a>
 
@@ -35,9 +48,9 @@
                     </div>
                     <nav class="header__nav">
                         <ul>
-                            <li><a href="#" class="header__link">Catalog</a></li>
-                            <li><a href="#" class="header__link">Blog</a></li>
-                            <li><a href="#" class="header__link">About</a></li>
+                            <li><a href="/catalog" class="header__link">Catalog</a></li>
+                            <li><a href="/blog" class="header__link">Blog</a></li>
+                            <li><a href="/about" class="header__link">About</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -67,7 +80,8 @@
                             thoughtfully designed and carefully crafted, blending traditional techniques with modern
                             aesthetics.
                             Whether you're
-                            looking for a unique gift or a special addition to your home, our collection offers timeless
+                            looking for a unique gift or a special addition to your home, our collection offers
+                            timeless
                             pieces
                             that
                             bring warmth
@@ -78,12 +92,14 @@
                         <h3 class="title-h3">Our workshop</h3>
                         <img class="activities__img" src="/assets/ceramic-CP-xcCKa.jpg" alt="ceramic" />
                         <div class="activities__text activities__text_fixed">
-                            At <span class="activities__text_colored">Ceramic Soul</span> workshop, we don’t just craft
+                            At <span class="activities__text_colored">Ceramic Soul</span> workshop, we don’t just
+                            craft
                             ceramics—we invite you to get
                             hands-on
                             and
                             create your own unique pieces.
-                            Through our engaging masterclasses, you’ll learn traditional techniques, work with natural
+                            Through our engaging masterclasses, you’ll learn traditional techniques, work with
+                            natural
                             materials,
                             and experience the
                             joy of shaping clay into something truly personal.
@@ -123,6 +139,7 @@
                                     id="agree" name="agree" type="checkbox" required>I agree
                                 with
                                 the <a href="#">terms</a></label>
+                            <div class="checkbox-error-message"></div>
                             <button type="submit" class="btn-send touch__btn">Send request</button>
                         </form>
 
@@ -161,6 +178,7 @@
                         <h2 class="footer__text footer__h2">Keep up to date with news and promotions</h2>
                         <input type="email" class="footer__input" placeholder="Enter your e-mail" id="footer_email"
                             required name="footer_email" />
+                        <div class="footer_email_error"></div>
                         <div>
                             <label for="footer_agree" class="label__default footer__checkbox-block">
                                 <input class="footer__checkbox" type="checkbox" id="footer_agree" required
@@ -168,7 +186,7 @@
                                 I agree with the <a href="#">terms</a>
                             </label>
                         </div>
-                        <button class="btn-submit footer__button">submit</button>
+                        <button type="submit" class="btn-submit footer__button">submit</button>
                     </form>
                     <!-- <div class="footer__info"> -->
                     <div class="footer__wrapper">
@@ -176,8 +194,8 @@
                             <div class="footer__title">discover</div>
                             <nav>
                                 <ul class="footer__ul">
-                                    <li class="footer__text footer__li"><a href="#">About Us</a></li>
-                                    <li class="footer__text footer__li"><a href="#">Blog</a></li>
+                                    <li class="footer__text footer__li"><a href="/about">About Us</a></li>
+                                    <li class="footer__text footer__li"><a href="/blog">Blog</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -185,7 +203,7 @@
                             <nav>
                                 <div class="footer__title">shopping</div>
                                 <ul class="footer__ul">
-                                    <li class="footer__text  footer__li"><a href="#">Catalog</a></li>
+                                    <li class="footer__text  footer__li"><a href="/catalog">Catalog</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -201,17 +219,16 @@
                     <div class="footer__follow">
                         <div class="footer__title">follow us</div>
                         <div class="footer__wrapper_icons">
-                            <a href="#" class="icon-facebook footer__icon"></a>
-                            <a href="#" class="icon-instagram footer__icon"></a>
-                            <a href="#" class="icon-pinterest footer__icon"></a>
+                            <a class="icon-facebook footer__icon"></a>
+                            <a class="icon-instagram footer__icon"></a>
+                            <a class="icon-pinterest footer__icon"></a>
                         </div>
                     </div>
                     <!-- </div> -->
                 </div>
                 <div class="footer__copyright">© Copyright 2025, Ceramic soul</div>
             </div>
-        </footer>
-
+        </footer>
     </main>
 
 </body>

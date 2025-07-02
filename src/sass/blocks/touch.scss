@@ -1,6 +1,11 @@
 @use "/src/sass/base/variables.scss" as v;
 
 .touch {
+    .just-validate-error-field {
+        border: none;
+        outline: 1px solid v.$ui-error-color;
+    }
+
     padding-top: 60px;
 
     &__wrapper {
@@ -24,6 +29,18 @@
     &__input {
         width: 100%;
         height: 48px;
+
+        &:is(:-webkit-autofill, :autofill) {
+            // border-color: v.$ui-active-color;
+            // font-weight: 400;
+            // font-size: 14px;
+            // font-style: normal;
+            // line-height: normal;
+            // padding-bottom: 15px;
+            // -webkit-text-fill-color: v.$light-color;
+            -webkit-box-shadow: 0 0 0px 1000px #FFF inset;
+        }
+
         // margin-top: 8px;
     }
 
@@ -84,6 +101,9 @@
             position: absolute;
             right: 0px;
             bottom: 0;
+
+            animation: rotate 3s;
+            animation-iteration-count: 1;
         }
     }
 }
